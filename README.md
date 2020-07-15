@@ -5,12 +5,12 @@ critic. This application and database will serve as a great resource for movie-l
 both movie reviews and movie statistics.
 
 ## Code, Report, Presentation
-• You can view the code for Spoiler Alert [here](https://github.com/zacherymorris2021/SpoilerAlert/tree/master/database_and_application_code)
+• You can view the code for Spoiler Alert ([here](https://github.com/zacherymorris2021/SpoilerAlert/tree/master/database_and_application_code))
 
 • You can view the project report which details features, user stories, design process, database schema, 
-and proofs of normalized tables [here](https://github.com/zacherymorris2021/SpoilerAlert/blob/master/Project-Report-CS4750.pdf)
+and proofs of normalized tables ([here](https://github.com/zacherymorris2021/SpoilerAlert/blob/master/Project-Report-CS4750.pdf))
 
-• You can view the project presentation [here](https://github.com/zacherymorris2021/SpoilerAlert/blob/master/Project-Presentation-CS4750.pdf)
+• You can view the project presentation ([here](https://github.com/zacherymorris2021/SpoilerAlert/blob/master/Project-Presentation-CS4750.pdf))
 
 ## Features
 • Users can see reviews of movies from a designated movie critic.
