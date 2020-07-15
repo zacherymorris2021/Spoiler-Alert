@@ -22,4 +22,4 @@ and proofs of normalized tables ([here](https://github.com/zacherymorris2021/Spo
 • Users can download a copy of movies and statistics.
 
 ## Tools Used
-• PHP, HTML, PhpMyAdmin
+• PHP, HTML, PhpMyAdmin, MySQL
