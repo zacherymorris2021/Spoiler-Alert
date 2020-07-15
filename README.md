@@ -1,4 +1,4 @@
-# SpoilerAlert
+# Welcome to SpoilerAlert
 • Spoiler alert allows users to see reviews of movies from a designated movie critic. Therefore, users can 
 search movies for movies in the database and see the ones highly rated by the movie 
 critic. This application and database will serve as a great resource for movie-lovers: containing 
