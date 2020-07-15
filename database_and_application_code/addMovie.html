@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+    <head>
+        <title>Add Movie</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+        </script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+        </script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+                <style>
+                * {
+                  box-sizing: border-box;
+                }
+                
+                body {
+                  font-family: Arial, Helvetica, sans-serif;
+                }
+                
+                /* Float four columns side by side */
+                .column {
+                  float: left;
+                  width: 25%;
+                  padding: 0 10px;
+                }
+                
+                /* Remove extra left and right margins, due to padding */
+                .row {margin: 0 -5px;}
+                
+                /* Clear floats after the columns */
+                .row:after {
+                  content: "";
+                  display: table;
+                  clear: both;
+                }
+                
+                /* Responsive columns */
+                @media screen and (max-width: 600px) {
+                  .column {
+                    width: 100%;
+                    display: block;
+                    margin-bottom: 20px;
+                  }
+                }
+                
+                /* Style the counter cards */
+                .card {
+                  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+                  padding: 16px;
+                  text-align: center;
+                  background-color: #f1f1f1;
+                }
+
+                hr.modified {
+                    background-color:#2D3C68;
+                    width: 100%;
+                    height: 0.3px;
+                }
+                </style>
+      </head>
+
+  <body>
+	<nav class="navbar fixed-top navbar-expand-sm bg-dark navbar-dark">
+    <div class="container-fluid">
+      <div class="left">
+        <ul class="navbar-nav">
+            <a class="navbar-brand" id="title" href="http://cs4750.cs.virginia.edu/~lns4pr/db/homepage.html">
+            <img src="small_logo.png" id = "title" height="30" width="35" class="d-inline-block align-top" alt=""></a>
+          <li class="nav-item">
+            <a class="nav-link" href="http://cs4750.cs.virginia.edu/~lns4pr/db/allReviews.html">All Reviews</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://cs4750.cs.virginia.edu/~lns4pr/db/addReview.html">Add Review</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://cs4750.cs.virginia.edu/~lns4pr/db/addMovie.html">Add Movie</a></li>
+	  <li class="nav-item">	
+            <a class="nav-link" href="http://cs4750.cs.virginia.edu/~lns4pr/db/downloadReviews.html">Download Reviews</a></li>
+        </ul>
+      </div>
+    </div>
+    </nav>
+    <br><br>
+
+    <div style="padding-top:50px; padding-bottom:50px; padding-left:300px; padding-right:300px">
+        <h2><center>Add New Movie and Insert to Database</center></h2>
+        <hr>
+                  <div class="card">
+                    <center><h3>Add movie below!</h3></center>
+                    <hr class="modified">
+                   
+                    <form action="MovieInsert.php" method="post">
+                            <strong>Title:</strong>  &emsp; &emsp;&emsp; <input type="text" name="title">
+                            <br>
+                            <br>
+                            <strong>Duration:</strong> &emsp; &emsp;&emsp; <input type="number" min="0"  name="duration">
+			    <br>
+			    <br>
+			    <strong>Genre:</strong> &emsp; &emsp;&emsp; <input type="text" name="genre">
+                            <br>
+                            <br>
+                            <strong>Gross Amount Made:</strong> &emsp;&emsp;&emsp; <input type="number" min="0"  name="gross">
+                            <br>
+                            <br>
+                            <strong>Language:</strong> &emsp;&emsp;&emsp; <input type="text" name="language"> 
+                            <br>
+                            <br>
+                            <strong>Your Review:</strong> &emsp;&emsp;&emsp; <input type="text" name="review"> 
+                            <br>
+                            <br>
+                            <center><input type="Submit"></center>
+                    </form>
+                  </div>
+  </div>
+
+  </body>
+</html>
